@@ -1,0 +1,832 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Todo: put here your site title -->
+    <title>Tarek Mohamed | Bio-Medical Engineer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hello, my name is <span class="text-color-main">Tarek Mohamed</span>
+          <br />
+       </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Know more</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="450px"
+                width="300px"
+                src="assets/TarekMohamed.jpeg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                I'm a senior student in Systems and Bio-Medical Engineering Department at Cairo University, Egypt. I'm graduating next spring.
+                 I'm Interested in Artifical Intellegence, Computer Vision, Image Processing and Software Development.
+
+              </p>
+              <p class="about-wrapper__info-text">
+                My GPA is 4.0. My IELTS score is 7.5. You can find my resume below.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/resume.pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects" >
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Liver Seg start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px rgb(222, 239, 245);" id="LiverSeg">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Segmentation of the liver and its lobes and vessels by using deep learning</h3>
+                <div>
+                  <p class="mb-4">
+                    In Progress, Graduation Project. Developing a general imaging
+                    modality tool to Automatically segment the liver and its vessels, lobes
+                    and lesions and quantify the liver volume and PDFF value by using deep learning.
+                    <div>
+                    <p class="project-wrapper__text-tools mb-4">
+                      Python, Pytorch, U-Net, 3D-UNet, MONAI Transforms, OOP
+                    </p>
+                      
+                    </div>
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  class="cta-btn cta-btn--hero"
+                  href="#LiverSeg"
+                  onclick="myFunction()"
+                >
+                Source Code
+                </a>
+             
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#LiverSeg">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/liverseg.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Liver Seg end -->
+
+          <!-- Retina start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);" id="Retina">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Diabetic Retinopathy Detection by Deep Learning</h3>
+                <div>
+                  <p class="mb-4">
+                    In Progress, Developing a tool to analyze patient's retina image and predict the degree of presence of diabetic retinopathy
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Pytorch, Torch Vision Transforms, CNN                  </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  class="cta-btn cta-btn--hero"
+                  href="#Retina"
+                  onclick="myFunction()"
+                >
+                Source Code
+                </a>
+               
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#Retina">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/diabetic.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Retina end -->
+          <!-- Seg start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Automatic Images Segmentation</h3>
+                <div>
+                  <p class="mb-4">
+                    Implementing U-Net CNN by Tensorflow. Building U-Net Encoder and Decoder and using skip
+                    connections between them to segment input images into different classes.
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Tensorflow, U-Net, ResNet, Transfer Learning                </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/Image-Segmentation"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/Image-Segmentation" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/unet.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Seg end -->
+          <!-- Car start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Autonomous Driving Car Detection</h3>
+                <div>
+                  <p class="mb-4">
+                    Detecting Objects in images by You Only Look Once ( YOLO ) Algorithm to help in autonomous driving applications
+                    The input is an image taken by a self-driving car, the output is the boundary boxes of detected objects.
+                    The boundary boxes contain information like what is the detected object, Probability, and co-ordinates of the object.
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Tensorflow, YOLO Algorithm, Transfer Learning                  </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/Autonomous_driving_application_Car_detection"
+                >
+                Source Code
+                </a>
+               
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/Autonomous_driving_application_Car_detection" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/yolo.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Car end -->
+          <!-- Face Shape Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Face Shape Classification by Swin Transformer</h3>
+                <div>
+                  <p class="mb-4">
+                    Desktop application to classify human face shape among 5 classes ( Oval, Square, Circle, Oblong, Heart )
+                     and extract facial landmarks. </br>
+                    The model is based on Shifted Window Transformer   ( Swin ) Architecture and pre-trained on Imagenet.
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Pytorch, Swin-Transformer, Hugging-Face,PyQT
+                  </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/SwinTransfrmer-For-FaceshapeClassification"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/SwinTransfrmer-For-FaceshapeClassification" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/swin.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Face Shape End  -->
+          <!-- Music Generator Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Music Generation by LSTM</h3>
+                <div>
+                  <p class="mb-4">
+                    Training LSTM Model implemented by TensorFlow on music notes after processing them, and eventually the model was able to create new notes
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Tensorflow, RNN, LSTM               </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/Music-Generation"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/Music-Generation" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/lstm.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Music Generator End -->
+          <!-- Face Recognition Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Face Recognition</h3>
+                <div>
+                  <p class="mb-4">
+                    Using Inception model to encode the input image to 128 dimensional vector and computing similarity between the encoded vector and the stored encodings of faces in database.
+                    The model was trained by using triplet loss function to learn how to maximize similarity encoding between similar faces and minimize it for different persons
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Tensorflow, FaceNet, Triplet Loss                </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/Face-Recognition"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/Face-Recognition" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/facenet.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Face Recognition End -->
+          <!-- Image Processing Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Image Processing in Frequency and Spatial domains</h3>
+                <div>
+                  <p class="mb-4">
+                    Image Processing GUI using Python. </br>
+                    Implemented some image processing algorithms applicable on both RGB and grayscale Images  with the ability to modify the kernel size (filter strength).
+                    
+                    Filters implemented and applied:
+                    
+                    Histogram Equalisation,
+                     Mean Filter,
+                     Median Filter,
+                     Low Pass Filter,
+                     High Pass Filter,
+                     Gaussian Filter,
+                     Sobel Filter,
+                     and Laplacian Filter.
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, PyQT, QtDesigner, OpenCV, FFT, Matplotlip                 </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/ImageProcessing-in-SpatialAndFrequencyDomain"
+                >
+                Source Code
+                </a>
+               
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/ImageProcessing-in-SpatialAndFrequencyDomain" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/filters.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Image Processing End -->
+          <!-- Equalizer Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Music Equalizer and Virtual Instruments</h3>
+                <div>
+                  <p class="mb-4">
+                    A desktop application created by PyQT. Can be used as a Music Player. In addition,
+                    can do signal processing on songs to supress certain musical instruments or emphasize certain instruments. 
+                    There is some built-in virtual musical instruments which you can play with and generate notes. 
+
+
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, PyQT, Fourier Transform , Matplotlip ,SoundDevices                 </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/Music-Equalizer"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/Music-Equalizer" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/equal.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Equalizer End  -->
+          <!-- Dicom Viewer Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">DICOM Online Image Viewer</h3>
+                <div>
+                  <p class="mb-4">
+                    This is a web-based project. created with ReactJS.
+                    It can Load DICOM images and navigate through them. There is some widgets to add more functionalities to the project.
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Web, Javascript, VTK, React, HTML, CSS                </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/web-application-DICOM-viewer"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/web-application-DICOM-viewer" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/dicom.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Dicom Viewer End -->
+          <!-- Digital Filter Designer Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Real-Time Digital Filter Design </h3>
+                <div>
+                  <p class="mb-4">
+                    This is a web-based project. Designed to test digital filters effect by adding poles and zeros and observing the magnitude and phase responses of the filter
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Web, Javasvript, Flask, HTML, CSS              </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/Realtime-Digital--Filter-Design"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/Realtime-Digital--Filter-Design" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/digfil.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Digital Filter Designer End -->
+ 
+          <!-- Covid Variants Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Relation between Covid-19 and Omicron Variant</h3>
+                <div>
+                  <p class="mb-4">
+                    A study to show the relation between Covid-19 and Omicron variant.
+                    The analysis was done by some techniques like Pyhlogenetic tree to show the variation between them. In addition,
+                     Python scripts were used to compare the sequences, calculate C,G ratios, and show the similarities and differences as well.
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Bio-Informatics, Bio-Statistics, Pyhlogenetic Tree                </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/CovidAndOmicron-Relation"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/CovidAndOmicron-Relation" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/omic.png  "
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Covid Variants End -->
+
+         
+
+          <!-- STM start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Microcontroller Interface with LM-35</h3>
+                <div>
+                  <p class="mb-4">
+                    Lm-35 Sensor with STM-32 by using ADC Driver Arm based Embedded System Project using STM32 microcontroller and
+                    LM35 Temperature sensor for temperature measurement
+
+                    Implemented the following drivers:
+                    
+                    GPIO,
+                      LCD,
+                      LM35 Temperature Sensor,
+                      ADC.
+                      Simulated using Proteus.
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Embedded, C, STM-32, ADC Driver, Proteus               </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/tarek909/STM32-LM35-ADCInterface"
+                >
+                Source Code
+
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/tarek909/STM32-LM35-ADCInterface" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/stm.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- STM end -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text">Send an E-Mail</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:tarekmohamedsb@outlook.com"
+            >E-Mail</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a> -->
+          <a rel="noreferrer" href="https://github.com/tarek909?tab=repositories" target="_blank">
+            <i class="fa fa-github fa-inverse fa-2x"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+          
+
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+    <script>
+      function myFunction() {
+        alert("This Project Still In Progress!");
+      }
+      </script>
+      
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
