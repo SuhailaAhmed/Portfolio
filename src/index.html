@@ -1,0 +1,762 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> jacobojavier98@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Todo: put here your site title -->
+    <title>Suhaila Ahmed | Bio-Medical Engineer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="[Your name here] | Developer" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+    <!-- Todo: remove the below script once you finish your portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hello, my name is <span class="text-color-main">Suhaila Ahmed</span>
+          <br />
+       </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Know more</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="450px"
+                width="300px"
+                src="assets/SuhailaAhmed.jpeg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                I'm a senior student in Systems and Bio-Medical Engineering Department at Cairo University, Egypt. I'm graduating this july.
+                I'm passionate about making contributing to software-biomedical industry and create new technologies to improve people health.
+                I'm Interested in Artifical Intellegence, Computer Vision, Image Processing and Software Development.
+
+              </p>
+              <p class="about-wrapper__info-text">
+                My GPA is 3.6. You can find my resume below.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/Suhaila-Ahmed_Resume.pdf"
+                >
+                  View Resume
+                </a>
+                <a
+                rel="noreferrer"
+                target="_blank"
+                class="cta-btn cta-btn--resume mx-3"
+                href="assets/Transcripts.pdf"
+                >
+                  Unofficial Transcript
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects" >
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Face reminder start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px rgb(222, 239, 245);" id="FaceReminder">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Face Reminder - Graduation Project: In Progress </h3>
+                <div>
+                  <p class="mb-4">
+                    With supervision of Uniparticle company
+                    Developed a mobile application to help people 
+                    with Prosopagnosia disease recognize familiar 
+                    faces of surrounding network using deep learning models.<br><br>
+                    The application connected to external camera within glasses 
+                    to help patient take pictures and send it to recognition app.
+                    <div>
+                    <p class="project-wrapper__text-tools mb-4">
+                      RetinaFace detector, FaceNet, Triplet Loss, Django, React Native, Embedded.
+                    </p>
+                      
+                    </div>
+                  </p>
+                </div>
+                <span class="d-flex mt-3"></span>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="https://github.com/SuhailaAhmed/GP_Backend"
+                  >
+                    Source Code till now
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="assets/PresentationFinal.pdf"
+                  >
+                    Presentation till now
+                  </a>
+                </span>
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#FaceReminder">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/GradProject.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Face reminder end -->
+
+          <!-- Image Processing Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Image Processing in Frequency and Spatial domains</h3>
+                <div>
+                  <p class="mb-4">
+                    Image Filtering using some image processing algorithms on both RGB and grayscale Images  with the ability to modify the kernel size.
+                    
+                    Filters implemented and applied:
+                    
+                    Histogram Equalisation,
+                     Mean Filter,
+                     Median Filter,
+                     Low Pass Filter,
+                     High Pass Filter,
+                     Gaussian Filter,
+                     Sobel Filter,
+                     and Laplacian Filter.
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, PyQT, OpenCV, FFT, Matplotlip                 </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/SuhailaAhmed/Image-filter"
+                >
+                Source Code
+                </a>
+               
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/SuhailaAhmed/Image-filter" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/ImageFilter.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Image Processing End -->
+
+          <!-- Face Shape Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Face Shape Classification by Swin Transformer</h3>
+                <div>
+                  <p class="mb-4">
+                    Desktop application to classify human face shape among 5 classes ( Oval, Square, Circle, Oblong, Heart )
+                      and extract facial landmarks. </br>
+                    The model is based on Shifted Window Transformer   ( Swin ) Architecture and pre-trained on Imagenet.
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Pytorch, Swin-Transformer, PyQT
+                  </p>
+                  
+                </div>
+                <span>
+                  <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/SuhailaAhmed/Face-shape-Classifier"
+                >
+                Source Code
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="assets/FaceClassifier.pdf"
+
+                >
+                Presentation
+                </a>
+                
+                </span>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/SuhailaAhmed/Face-shape-Classifier" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/FaceShape.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Face Shape End  -->
+
+          <!-- Digital-filter start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);" id="DigitalFilter">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Digital filter on vital signals</h3>
+                <div>
+                  <p class="mb-4">
+                    A website to design a custom digital filter to
+                    apply it on different signal types (Signal Filtering).
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Web, JavaScript, HTML, Flask, CSS                 </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/SuhailaAhmed/Digital-Filter-Design"
+                >
+                Source Code
+                </a>
+                
+               
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#DigitalFilter">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/DigitalFilter.jpeg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Digital-filter end -->
+
+          <!-- Equalizer Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Music Equalizer and Virtual Instruments</h3>
+                <div>
+                  <p class="mb-4">
+                    A desktop application created by PyQT can do signal processing on songs to emphasize certain instruments.
+                    and Can be used as a Music Player.
+                    In addition to, some built-in virtual musical instruments which you can play with and generate notes. 
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, PyQT, Fourier Transform , Matplotlip                </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/SuhailaAhmed/Music-Equalizer"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/SuhailaAhmed/Music-Equalizer" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/MusicEqualizer.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Equalizer End  -->
+          <!-- Dicom Viewer Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">DICOM Online body Image Viewer</h3>
+                <div>
+                  <p class="mb-4">
+                    A Website to render volumes of body model with
+                    options of clipping, cropping and iso-rendering.
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Web, Javascript, HTML, VTK, React, CSS                </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/SuhailaAhmed/Volume-Rendering"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/SuhailaAhmed/Volume-Rendering" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/VolumeRendering.gif"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Dicom Viewer End -->
+          <!-- Monitor start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Vital signs monitor "Multichannel  Signal Viewer"</h3>
+                <div>
+                  <p class="mb-4">
+                    A desktop application using python to monitor the vital signals like
+                    ECG, EMG of patient in ICU of hospital. </br>
+                    In addition to, Multichannel viwer and Histogram Equalization
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, PyQT, OpenCV, FFT, Matplotlib               </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/SuhailaAhmed/Multichannel-Signal-Viewer"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/SuhailaAhmed/Multichannel-Signal-Viewer" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/Monitor.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Monitor end -->
+          <!-- Face-aging start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Facial Aging Model</h3>
+                <div>
+                  <p class="mb-4">
+                    Deep learning model to find missing children by inserting their
+                    child faces and predict faces after years of aging.
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Tensorflow, cGAN, FaceNet                 </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="assets/Facial Aging.pdf"
+                >
+                Report
+                </a>
+               
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="assets/Facial Aging.pdf" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/Faceaging.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Face-aging end -->
+          <!-- Flower-classification Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Image "Flower" Classifier</h3>
+                <div>
+                  <p class="mb-4">
+                    Developed python application to predict type
+                    of input flower image, trained by dayaset of different species of flowers using Pytorch
+
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Ptorch, Matplotlib                </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/SuhailaAhmed/Image-Classifier"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/SuhailaAhmed/Image-Classifier" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/flowerclassifier.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Flower-classification End -->
+ 
+          <!-- Covid Variants Start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Relation between Covid-19 and Omicron Variant</h3>
+                <div>
+                  <p class="mb-4">
+                    Analyzing the DNA sequence of covid-19 and omicron variant and statistically representing the
+                    relation between them
+                    In addition, Python scripts were used to compare the sequences, calculate C,G ratios, and show the similarities and differences as well.
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Python, Bio-Informatics, Bio-Statistics, Pyhlogenetic Tree                </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/SuhailaAhmed/SARS-COV"
+                >
+                Source Code
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/SuhailaAhmed/SARS-COV" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/Bioinfo.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Covid Variants End -->
+          <!-- STM start -->
+          <div class="row my-5 py-5" style="box-shadow: 10px 15px 15px  rgb(222, 239, 245);">
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Microcontroller Interface with LM-35</h3>
+                <div>
+                  <p class="mb-4">
+                    STM32 microcontroller and LM35 Temperature sensor for temperature measurement
+                    implemented in Proteus Lm-35 Sensor with STM-32 by using ADC Driver Arm:
+                      GPIO,
+                      LCD,
+                      LM35 Temperature Sensor,
+                      ADC.
+                      Simulated .
+                  </p>
+                </div>
+                <div>
+                  <p class="project-wrapper__text-tools mb-4">
+                    Embedded, C, STM-32, ADC Driver, Proteus               </p>
+                  
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://github.com/SuhailaAhmed/ADC"
+                >
+                Source Code
+
+                </a>
+                
+              </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="https://github.com/SuhailaAhmed/ADC" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/ADC.png"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- STM end -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text">Send an E-Mail</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:suhailaahmedbk@gmail.com"
+            >E-Mail</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a> -->
+          <a rel="noreferrer" href="https://github.com/SuhailaAhmed" target="_blank">
+            <i class="fa fa-github fa-inverse fa-2x"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
+        <p class="footer__text">
+          
+
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+    <script>
+      function myFunction() {
+        alert("This Project Still In Progress!");
+      }
+      </script>
+      
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>
